@@ -30,7 +30,7 @@ This single-script installer handles all prerequisites, configuration files, sys
 
 1. **Download the script** to your Master node:
    ```bash
-   curl -fsSL https://raw.githubusercontent.com/OzzyGava/zoraxy-ha/refs/heads/main/zoraxy-ha_installer.sh -o zoraxy-ha_installer.sh
+   curl -fsSL https://raw.githubusercontent.com/OzzyGava/zoraxy-ha/refs/heads/main/zoraxy-ha-installer.sh -o zoraxy-ha-installer.sh
    chmod +x zoraxy-ha_installer.sh
    ```
 
