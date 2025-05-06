@@ -1,6 +1,6 @@
 #!/bin/bash
 set -euo pipefail
-
+#
 # Built with smashing keyboard against chatGPT and using some of my brain.
 
 # Paths
