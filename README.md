@@ -84,7 +84,7 @@ This single-script installer handles all prerequisites, configuration files, sys
 
 ## Adding More Replicas
 
-After initial Master setup, choose **“Add Replica”** from the menu (option 3), or run:
+After initial Master setup, choose **“Add Replica”** from the menu (option 3)
 
     ./zoraxy-ha_installer.sh
     # select option 3 → add replica IP & user
