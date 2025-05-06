@@ -76,7 +76,7 @@ This single-script installer handles all prerequisites, configuration files, sys
 
 - **HA Sync Service** (systemd)  
   - Watches `/opt/zoraxy/config` for changes in `conf/`, `www/`, `sys.db`.  
-  - Debounces events for 60 seconds.  
+  - Debounces events for 60 seconds, which means it'll wait to idle of 60 seconds before attempting a sync to the replica's if required.
   - Pushes updates via `rsync` to each IP in `ha-sync-peers.txt`.  
   - Restarts the Docker stack on each peer.  
 
