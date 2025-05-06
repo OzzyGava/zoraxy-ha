@@ -36,7 +36,7 @@ This single-script installer handles all prerequisites, configuration files, sys
 
 2. **Run the installer** interactively on the Master:
    ```bash
-   sudo ./zoraxy-ha_installer.sh
+   ./zoraxy-ha_installer.sh
    ```
    You’ll be prompted to choose one of three modes:
    1. Initialize a new HA cluster (Primary)  
