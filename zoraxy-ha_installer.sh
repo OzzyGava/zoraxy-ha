@@ -1,9 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-#
-# Zoraxy HA Installer v12 (with improved network prompts + proper TTY for replicas)
-#
+# Built with smashing keyboard against chatGPT and using some of my brain.
 
 # Paths
 SCRIPT_PATH="$(realpath "$0")"
