@@ -31,12 +31,12 @@ This single-script installer handles all prerequisites, configuration files, sys
 1. **Download the script** to your Master node:
    ```bash
    curl -fsSL https://raw.githubusercontent.com/OzzyGava/zoraxy-ha/refs/heads/main/zoraxy-ha-installer.sh -o zoraxy-ha-installer.sh
-   chmod +x zoraxy-ha_installer.sh
+   chmod +x zoraxy-ha-installer.sh
    ```
 
 2. **Run the installer** interactively on the Master:
    ```bash
-   ./zoraxy-ha_installer.sh
+   ./zoraxy-ha-installer.sh
    ```
    You’ll be prompted to choose one of three modes:
    1. Initialize a new HA cluster (Primary)  
