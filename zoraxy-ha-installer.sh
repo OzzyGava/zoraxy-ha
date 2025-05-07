@@ -241,14 +241,14 @@ trap 'pkill -P $$ inotifywait' EXIT
 log(){ echo "$(date '+%F %T') $*" >> "$LOG_FILE"; }
 [ -e "$TIMESTAMP_FILE" ] || touch "$TIMESTAMP_FILE"
 inotifywait -m -r --quiet \
-  --exclude '(/log/|/tmp/)' \
+  --exclude '(/log/|/tmp/|sys.db)' \
   -e modify,create,delete,move \
   --format '%w%f %e' \
   "$SOURCE_DIR" \
   | tee -a "$LOG_FILE" \
   | while read -r F EVENTS; do
       case "$F" in
-        "$SOURCE_DIR"/conf/*|"$SOURCE_DIR"/www/*|*/sys.db)
+        "$SOURCE_DIR"/conf/*|"$SOURCE_DIR"/www/*)
           log "Event: $EVENTS on $F – resetting debounce"
           touch "$TIMESTAMP_FILE"
           ;;
