@@ -173,7 +173,7 @@ phase_core(){
     install_packages inotify-tools jq iputils-ping net-tools
     mkdir -p /opt/zoraxy/{scripts,logs}
     touch /opt/zoraxy/ha-sync-peers.txt
-    printf "log/\ntmp/\nsys.uuid\n" > /opt/zoraxy/scripts/.rsync-exclude
+    printf "# runtime state\ndb.sys\n*.sys\n\n# logs & temp\nlogs/\ntmp/\n\n# per-node env (don't sync!)\nha-env.conf\n" > /opt/zoraxy/scripts/.rsync-exclude
   fi
   install_packages keepalived
 }
